@@ -5,6 +5,8 @@ import {
   SectionHoverIcon,
   SectionHoverText,
   SectionHoverStepNumber,
+  SectionHoverStepDescription,
+  SectionHoverStepTitle,
 } from "./styles";
 
 import { Smile } from "react-feather";
@@ -24,11 +26,11 @@ export function Stepper(props) {
         <SectionHoverStepNumber className="section-hover-step-number">
           1 passo
         </SectionHoverStepNumber>
-        <div className="section-hover-step-title">Blablablablabla</div>
+        <SectionHoverStepTitle>Blablablablabla</SectionHoverStepTitle>
         {!!openBox && (
-          <div className="section-hover-step-description">
+          <SectionHoverStepDescription>
             aidshaiuehsauiehaiuheu
-          </div>
+          </SectionHoverStepDescription>
         )}
       </SectionHoverText>
     </SectionHoverStep>

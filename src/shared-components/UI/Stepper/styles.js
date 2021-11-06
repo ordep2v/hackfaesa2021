@@ -2,6 +2,7 @@ import styled from "styled-components";
 import media from "styled-media-query";
 
 export const SectionHoverStep = styled.article`
+  
   padding: 0.5rem 0rem 0.5rem 0.5rem;
   border-radius: 0.2rem;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -33,12 +34,18 @@ export const SectionHoverText = styled.p`
   color: #1a202c;
 `;
 
-export const SectionHoverStepNumber = styled.p``;
+export const SectionHoverStepNumber = styled.p`
+${media.greaterThan('large')`
+  font-size: 1.6rem;`}`;
 
 export const SectionHoverStepTitle = styled.p`
   font-weight: bolder;
+  ${media.greaterThan('large')`
+  font-size: 1.6rem;`}
  
 `;
 
 export const SectionHoverStepDescription = styled.p`
+ ${media.greaterThan('large')`
+  font-size: 1.6rem;`}
 `;

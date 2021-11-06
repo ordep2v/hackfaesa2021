@@ -5,11 +5,14 @@
 body {
   margin: 0;
   /* padding: 0 1rem 0 1rem; */
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-section, header { 
+section,
+header {
   padding: 0 1rem 0 1rem;
 }
 
@@ -58,7 +61,7 @@ section, header {
     border: 0;
     border-radius: 0.3rem;
     color: #e7e4e4;
-    padding: .35rem .5rem .35rem .6rem;
+    padding: 0.35rem 0.5rem 0.35rem 0.6rem;
     background: #48bb78;
     width: 10rem;
     text-align: left;
@@ -76,7 +79,7 @@ section, header {
   }
   /* Section 2 */
   .section-landing-simple {
-    margin-top: .8rem;
+    margin-top: 0.8rem;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -114,7 +117,7 @@ section, header {
     line-height: 140%;
     font-size: 0.9rem;
   }
-    /* Section 4 */
+  /* Section 4 */
   .section-step-by-step {
     margin-top: 2rem;
     display: flex;
@@ -126,7 +129,7 @@ section, header {
   }
   /* Step Box*/
   .section-hover-icon {
-    padding-top: .4rem;
+    padding-top: 0.4rem;
     display: flex;
     align-items: flex-start;
   }
@@ -138,7 +141,7 @@ section, header {
     padding: 0 1.5rem 0 1.5rem;
   }
   .section-hover-step {
-    padding: .5rem 0rem .5rem .5rem;
+    padding: 0.5rem 0rem 0.5rem 0.5rem;
     border-radius: 0.2rem;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     max-width: 100%;
@@ -168,13 +171,13 @@ section, header {
     flex-direction: column;
   }
   .form-input {
-    padding: .5rem;
+    padding: 0.5rem;
     font-size: 1.2rem;
     margin-top: 1rem;
-    border-radius: .3rem;
+    border-radius: 0.3rem;
     border-style: solid;
     border-width: 0;
-    background-color: rgb(238, 237, 237);
+    /* background-color: rgb(238, 237, 237); */
     outline: none;
   }
   .form-buttons {
@@ -187,12 +190,10 @@ section, header {
     border: 0;
     border-radius: 0.3rem;
     color: #e7e4e4;
-    padding: .5rem;
+    padding: 0.5rem;
     background: #48bb78;
     width: 100%;
     text-align: left;
     line-height: 130%;
-
   }
-
 }
