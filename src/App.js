@@ -9,27 +9,34 @@ import { LandingPageContainer } from "./styles";
 
 import bgImage from "./shared-components/Images/image-background.png";
 import { SystemModule } from "./modules/System";
+import { useEffect, useState } from "react";
 
 function App() {
+  const [url, setUrl] = useState("");
+  useEffect(() => {
+    setInterval(() => {
+      setUrl(window.location.href);
+    }, 1)
+  }, [setUrl]);
   return (
     <BrowserRouter>
       <div className="App">
         <LandingPageContainer bgImage={bgImage}>
-          <Navigation />
-            <Route
-              exact
-              path="/"
-              component={() => (
-                <HomeModule/>
-              )}
-            />
-            <Route
-              exact
-              path="/system"
-              component={() => (
-                <SystemModule/>
-              )}
-            />
+          <Navigation innerNav={url.split("/").pop()?.length === 0} />
+          <Route
+            exact
+            path="/"
+            component={() => (
+              <HomeModule />
+            )}
+          />
+          <Route
+            exact
+            path="/system"
+            component={() => (
+              <SystemModule />
+            )}
+          />
           <Footer />
         </LandingPageContainer>
       </div>

@@ -4,14 +4,21 @@ import { PlantusLogo } from "../../../config/company/Logo";
 
 import { Button } from "../Button";
 import { Link } from "react-router-dom";
+import { Bell } from "react-feather";
 
-export const Navigation = () => {
+export const Navigation = (props) => {
   return (
-    <Nav className="header-landing">
-      <PlantusLogo />
-      <Link to='/system'>
-      <Button text="Sou colaborador" />
-      </Link>
-    </Nav>
+    <>
+      (<Nav className="header-landing">
+        <PlantusLogo />
+        <Link to='/system'>
+          {props.innerNav ? (
+            <Button text="Sou colaborador" />
+          ) : (
+            <Bell color='black' size='1.6rem' />
+          )}
+        </Link>
+      </Nav>
+    </>
   );
 };

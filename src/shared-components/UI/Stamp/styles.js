@@ -1,15 +1,15 @@
 import styled from "styled-components";
 import media from "styled-media-query";
 
-export const StampProgressImageDivision = styled.div`
-
-`
 export const StampProgressMainBox = styled.div`
 display: flex;
 padding:1rem;
 `
 export const StampProgressImage = styled.img`
 max-width: 4rem;`
+export const StampProgressImageDivision = styled.div`
+width: 4rem;
+`
 export const StampProgressTextBox = styled.div`
 margin-left: .5rem;
 display: flex;

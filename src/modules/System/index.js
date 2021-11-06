@@ -1,3 +1,4 @@
+import { CompaniesDoing } from "./components/CompaniesDoing";
 import { MakeDiff } from "./components/MakeDiff";
 import { StampProgress } from "./components/StampProgress";
 import { TopButtons } from "./components/TopButtons";
@@ -16,6 +17,7 @@ export const SystemModule = () => {
       <TopButtons/>
       <StampProgress/>
       <MakeDiff/>
+      <CompaniesDoing/>
     </SystemContainer>
   );
 };
