@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import media from "styled-media-query";
 
 export const SectionHoverStep = styled.article`
   padding: 0.5rem 0rem 0.5rem 0.5rem;
@@ -13,19 +14,22 @@ export const SectionHoverStep = styled.article`
   margin: 1em 0;
 
   color: #1a202c;
+  ${media.greaterThan('large')`
+  width: 30rem;
+  `}
 `;
 
 export const SectionHoverIcon = styled.div`
   padding-top: 0.4rem;
   display: flex;
   align-items: flex-start;
-
   color: #1a202c;
+  ${media.greaterThan('large')`
+  font-size: 1.2rem;`}
 `;
 
 export const SectionHoverText = styled.p`
   margin-left: 0.4rem;
-
   color: #1a202c;
 `;
 
@@ -33,6 +37,8 @@ export const SectionHoverStepNumber = styled.p``;
 
 export const SectionHoverStepTitle = styled.p`
   font-weight: bolder;
+ 
 `;
 
-export const SectionHoverStepDescription = styled.p``;
+export const SectionHoverStepDescription = styled.p`
+`;
