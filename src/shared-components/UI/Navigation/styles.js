@@ -1,12 +1,17 @@
 import styled from "styled-components";
-import media from "styled-media-query";
 
 export const Nav = styled.nav`
   display: flex;
-
   justify-content: space-between;
+  position: sticky;
+  top: 0;
 
-  margin-bottom: 1.5em;
-  ${media.greaterThan('large')`
-padding: 0 20rem 0 20rem;`}
+  margin-bottom: 2em;
+  padding: 0.5em 1em;
+
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 `;

@@ -2,27 +2,28 @@ import styled from "styled-components";
 import media from "styled-media-query";
 
 export const ContactUsContainer = styled.section`
-  margin-top: 3em;
+  margin-top: 5em;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  ${media.greaterThan('large')`
   width: 100%;
-  padding: 0 20rem 0 20rem;
-  h2 {
-    font-size: 2rem;
+
+  @media (min-width: 768px) {
+    max-width: 600px;
+    h2 {
+      font-size: 2rem;
+    }
+    p {
+      margin-top: 1rem;
+      font-size: 1.6rem;
+    }
   }
-  p {
-    margin-top: 1rem;
-    font-size: 1.6rem;
-  }
-  `}
 `;
 
 export const ContactUsForm = styled.form`
-  margin-top: 1em;
+  margin-top: 5em;
   display: grid;
   gap: 0.5em;
 
@@ -35,16 +36,16 @@ export const ContactUsForm = styled.form`
       color: #1a202c;
     }
   }
-  ${media.greaterThan('large')`
+  ${media.greaterThan("large")`
   gap: 1rem;
   input{
-    font-size: 1.6rem;
+    font-size: 1.2rem;
       color: #1a202c;
       background: #ededed;
   }
   button {
-    font-size: 1.8rem;
-    height: 4rem;
+    font-size: 1.5rem;
+    padding: 1em;
   }
   `}
 `;

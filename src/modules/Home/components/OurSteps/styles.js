@@ -1,23 +1,27 @@
 import styled from "styled-components";
-import media from "styled-media-query";
 
 export const OurStepsContainer = styled.section`
-  margin-top: 3em;
-  width: 100%;
+  margin-top: 5em;
+  max-width: 900px;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  ${media.greaterThan('large')`
-  `}
+
+  @media (min-width: 768px) {
+    h2 {
+      font-size: 1.8rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  }
 `;
 
 export const OurStepsButtons = styled.div`
-cursor: default;
-${media.greaterThan('large')`
-margin-top: 2rem;
+  cursor: default;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
-  width: 100%;`}
-`
+  margin-top: 2em;
+`;

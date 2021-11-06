@@ -8,7 +8,7 @@ export const Navigation = () => {
   return (
     <Nav className="header-landing">
       <PlantusLogo />
-      <Button text="Sou colaborador" variant="outline" />
+      <Button text="Sou colaborador" />
     </Nav>
   );
 };

@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import media from "styled-media-query";
 
 export const OurProductContainer = styled.section`
   margin-top: 3em;
@@ -7,10 +6,13 @@ export const OurProductContainer = styled.section`
   display: grid;
   justify-content: center;
   text-align: center;
-  ${media.greaterThan('large')`
-  h2 {
-    font-size: 1.8rem;
-  }`}
+
+  @media (min-width: 768px) {
+    h2 {
+      font-size: 1.8rem;
+      max-width: 600px;
+    }
+  }
 `;
 
 export const OurProductImage = styled.img`

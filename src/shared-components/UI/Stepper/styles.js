@@ -2,21 +2,29 @@ import styled from "styled-components";
 import media from "styled-media-query";
 
 export const SectionHoverStep = styled.article`
-  
-  padding: 0.5rem 0rem 0.5rem 0.5rem;
   border-radius: 0.2rem;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  max-width: 100%;
+  cursor: pointer;
+
   display: flex;
-  flex-direction: row;
+  justify-content: center;
   text-align: left;
   align-content: center;
-  justify-content: flex-start;
-  margin: 1em 0;
+  flex-wrap: wrap;
+
+  margin: 1em;
+  padding: 1em;
+
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 
   color: #1a202c;
-  ${media.greaterThan('large')`
-  width: 30rem;
+  ${media.greaterThan("large")`
+  width: 30ch;
+  min-height: 15ch;
   `}
 `;
 
@@ -25,7 +33,7 @@ export const SectionHoverIcon = styled.div`
   display: flex;
   align-items: flex-start;
   color: #1a202c;
-  ${media.greaterThan('large')`
+  ${media.greaterThan("large")`
   font-size: 1.2rem;`}
 `;
 
@@ -35,17 +43,17 @@ export const SectionHoverText = styled.p`
 `;
 
 export const SectionHoverStepNumber = styled.p`
-${media.greaterThan('large')`
-  font-size: 1.6rem;`}`;
+  ${media.greaterThan("large")`
+  font-size: 1.6rem;`}
+`;
 
 export const SectionHoverStepTitle = styled.p`
   font-weight: bolder;
-  ${media.greaterThan('large')`
+  ${media.greaterThan("large")`
   font-size: 1.6rem;`}
- 
 `;
 
 export const SectionHoverStepDescription = styled.p`
- ${media.greaterThan('large')`
+  ${media.greaterThan("large")`
   font-size: 1.6rem;`}
 `;

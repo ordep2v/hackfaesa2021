@@ -1,10 +1,12 @@
 import styled from "styled-components";
-import media from "styled-media-query";
 
 export const HomeContainer = styled.div`
-display: flex;
-flex-direction: column;
-align-items: center;
-${media.greaterThan('large')`
-padding: 0 20rem 0 20rem;`}
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1em;
 `;
