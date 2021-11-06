@@ -2,11 +2,13 @@ import { useState } from "react";
 
 import { MakeDiff } from "./components/HomePage/MakeDiff";
 import { StampProgress } from "./components/HomePage/StampProgress";
-import { CompaniesDoing } from "./components/CompaniesDoing";
+import { CompaniesDoing } from "./components/HomePage/CompaniesDoing";
 
 import { SystemContainer } from "./styles";
 
 import { Tab } from "../../shared-components/UI/Tabs";
+import { Route } from "react-router";
+import { BlogPost } from "./components/BlogPost";
 
 export const SystemModule = () => {
   const [systemTab, setSystemTab] = useState(0);
@@ -24,6 +26,7 @@ export const SystemModule = () => {
         <MakeDiff />
         <CompaniesDoing />
       </Tab>
+
     </SystemContainer>
   );
 };

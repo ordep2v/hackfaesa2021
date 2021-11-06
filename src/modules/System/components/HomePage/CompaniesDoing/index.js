@@ -1,6 +1,7 @@
-import { Card } from "../../../../shared-components/UI/Card";
-import { SeparatorTitle } from "../../../../shared-components/UI/SeparatorTitle"
-import { CompaniesDoingCard, CompaniesDoingCardWrapper, CompaniesDoingContainer } from "./styles";
+import { Card } from "../../../../../shared-components/UI/Card";
+import { SeparatorTitle } from "../../../../../shared-components/UI/SeparatorTitle";
+import { CompaniesDoingCardWrapper, CompaniesDoingContainer } from "./styles";
+
 export const CompaniesDoing = () => {
     return (
         <>

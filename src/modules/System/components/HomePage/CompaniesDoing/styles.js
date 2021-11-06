@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import { CompaniesDoingCard, CompaniesDoingImageBox } from "../../../../shared-components/UI/Card/styles";
+import { CompaniesDoingCard } from "../../../../../shared-components/UI/Card/styles";
+
 
 export const CompaniesDoingContainer = styled.section`
 margin-top: 2.5rem;
