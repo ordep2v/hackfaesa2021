@@ -1,0 +1,198 @@
+* {
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  /* padding: 0 1rem 0 1rem; */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+section, header { 
+  padding: 0 1rem 0 1rem;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  /* Header*/
+  .header-landing {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 1rem;
+  }
+  #header-image img {
+    max-width: 100%;
+  }
+  #header-image {
+    max-width: 100%;
+  }
+  /* Main*/
+  main {
+    height: 100%;
+  }
+  /* Sections */
+  .section-landing {
+    margin-top: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .section-landing-title {
+    text-align: left;
+    font-size: 2.5rem;
+  }
+  .section-landing-description {
+    max-width: 70%;
+    margin-top: 2rem;
+    text-align: left;
+  }
+  .section-landing-button {
+    z-index: 2;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: flex-start;
+  }
+  #section-landing-button-meetnow {
+    font-size: 0.9rem;
+    display: flex;
+    border: 0;
+    border-radius: 0.3rem;
+    color: #e7e4e4;
+    padding: .35rem .5rem .35rem .6rem;
+    background: #48bb78;
+    width: 10rem;
+    text-align: left;
+    line-height: 130%;
+  }
+  .section-landing-image {
+    right: 0;
+    display: flex;
+    position: relative;
+    transform: translate3d(10px, -60px, 0);
+    justify-content: flex-end;
+  }
+  .section-landing-image #section-landing-img {
+    height: 16rem;
+  }
+  /* Section 2 */
+  .section-landing-simple {
+    margin-top: .8rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .section-landing-simple-text {
+    padding: 0rem 2rem 0rem 2rem;
+  }
+  .section-landing-text-diff-fonts {
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #section-business-inline {
+    padding: 0 2rem 0 2rem;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .section-landing-text-diff-fonts div {
+    justify-content: center;
+    max-width: 100%;
+  }
+  /* Section 3 */
+  .section-landing-tiny {
+    margin-top: 2rem;
+    padding: 0 4rem 0 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .section-landing-tiny-text {
+    color: rgb(27, 27, 27);
+    line-height: 140%;
+    font-size: 0.9rem;
+  }
+    /* Section 4 */
+  .section-step-by-step {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .section-step-by-step-text {
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  /* Step Box*/
+  .section-hover-icon {
+    padding-top: .4rem;
+    display: flex;
+    align-items: flex-start;
+  }
+  .section-step-by-step-buttons {
+    margin-top: 1rem;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    padding: 0 1.5rem 0 1.5rem;
+  }
+  .section-hover-step {
+    padding: .5rem 0rem .5rem .5rem;
+    border-radius: 0.2rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    align-content: center;
+    justify-content: flex-start;
+    margin-bottom: 1rem;
+  }
+  .section-hover-text {
+    margin-left: 0.4rem;
+  }
+  .section-hover-step-title {
+    font-weight: bolder;
+  }
+  /* Image Boy Cellphone */
+  .image-boy-cellphone-box {
+    margin-top: 3rem;
+  }
+  /* Form*/
+  .section-form {
+    padding: 0 2rem 0 2rem;
+  }
+  #form-consulting {
+    display: flex;
+    flex-direction: column;
+  }
+  .form-input {
+    padding: .5rem;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    border-radius: .3rem;
+    border-style: solid;
+    border-width: 0;
+    background-color: rgb(238, 237, 237);
+    outline: none;
+  }
+  .form-buttons {
+    width: 100%;
+  }
+  #form-button {
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+    display: flex;
+    border: 0;
+    border-radius: 0.3rem;
+    color: #e7e4e4;
+    padding: .5rem;
+    background: #48bb78;
+    width: 100%;
+    text-align: left;
+    line-height: 130%;
+
+  }
+
+}
