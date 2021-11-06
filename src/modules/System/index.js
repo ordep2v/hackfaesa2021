@@ -2,9 +2,10 @@ import { useState } from "react";
 
 import { MakeDiff } from "./components/HomePage/MakeDiff";
 import { StampProgress } from "./components/HomePage/StampProgress";
-import { CompaniesDoing } from "./components/CompaniesDoing";
+import { CompaniesDoing } from "./components/HomePage/CompaniesDoing";
+import { ObjectivesStampProgress } from "./components/Objectives/StampProgress";
 
-import { SystemContainer } from "./styles";
+import { SystemContainer, HomePageContainer } from "./styles";
 
 import { Tab } from "../../shared-components/UI/Tabs";
 
@@ -19,10 +20,23 @@ export const SystemModule = () => {
 
   return (
     <SystemContainer>
-      <Tab tabText={tabText} index={systemTab} onChange={handleTabsChange}>
-        <StampProgress />
-        <MakeDiff />
-        <CompaniesDoing />
+      <Tab
+        tabText={tabText}
+        index={systemTab}
+        onChange={(index) => handleTabsChange(index)}
+      >
+        {systemTab === 0 && (
+          <HomePageContainer>
+            <StampProgress className="stamp" />
+            <MakeDiff className="makediff" />
+            <CompaniesDoing className="companies" />
+          </HomePageContainer>
+        )}
+        {systemTab === 1 && (
+          <HomePageContainer>
+            <ObjectivesStampProgress />
+          </HomePageContainer>
+        )}
       </Tab>
     </SystemContainer>
   );
