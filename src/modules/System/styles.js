@@ -1,5 +1,9 @@
 import styled from "styled-components";
-import { StampProgressArticle, StampProgressDescription, StampProgressTitle } from "../../shared-components/UI/Stamp/styles";
+import {
+  StampProgressArticle,
+  StampProgressDescription,
+  StampProgressTitle,
+} from "../../shared-components/UI/Stamp/styles";
 
 export const SystemContainer = styled.div`
   display: flex;
@@ -7,9 +11,15 @@ export const SystemContainer = styled.div`
   justify-content: center;
   align-items: center;
 
+  width: 100%;
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 1em;
+
+  .chakra-tabs {
+    width: 100%;
+  }
+
   ${StampProgressArticle}:nth-child(3) {
     ${StampProgressTitle} {
       font-size: 1.2rem;

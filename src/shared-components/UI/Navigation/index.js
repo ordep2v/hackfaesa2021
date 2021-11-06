@@ -8,9 +8,11 @@ import { Link } from "react-router-dom";
 export const Navigation = () => {
   return (
     <Nav className="header-landing">
-      <PlantusLogo />
-      <Link to='/system'>
-      <Button text="Sou colaborador" />
+      <Link to="/">
+        <PlantusLogo />
+      </Link>
+      <Link to="/system">
+        <Button text="Sou colaborador" />
       </Link>
     </Nav>
   );

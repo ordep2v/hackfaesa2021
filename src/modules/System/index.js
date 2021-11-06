@@ -1,21 +1,27 @@
-import { MakeDiff } from "./components/MakeDiff";
-import { StampProgress } from "./components/StampProgress";
-import { TopButtons } from "./components/TopButtons";
+import { useState } from "react";
+
+import { MakeDiff } from "./components/HomePage/MakeDiff";
+import { StampProgress } from "./components/HomePage/StampProgress";
+
+import { Tab } from "../../shared-components/UI/Tabs";
+
 import { SystemContainer } from "./styles";
 
-const ContactUsFormDetails = [
-  { content: "Nome" },
-  { content: "Telefone" },
-  { content: "Empresa" },
-  { content: "Email" },
-];
-
 export const SystemModule = () => {
+  const [systemTab, setSystemTab] = useState(0);
+
+  const handleTabsChange = (index) => {
+    setSystemTab(index);
+  };
+
+  const tabText = ["Início", "Objetivos", "Postar"];
+
   return (
     <SystemContainer>
-      <TopButtons/>
-      <StampProgress/>
-      <MakeDiff/>
+      <Tab tabText={tabText} index={systemTab} onChange={handleTabsChange}>
+        <StampProgress />
+        <MakeDiff />
+      </Tab>
     </SystemContainer>
   );
 };
