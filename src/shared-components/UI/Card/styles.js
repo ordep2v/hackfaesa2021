@@ -34,7 +34,7 @@ font-size: .8rem;`
 export const CompaniesDoingText = styled.div`
 font-size: 1.1rem;`
 
-export const CompaniesSeeMore = styled.a`
+export const CompaniesSeeMore = styled.div`
 margin-top: .2rem;
 font-size: 1.1rem;
 color: lightblue;

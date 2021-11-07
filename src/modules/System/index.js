@@ -8,6 +8,7 @@ import { ObjectivesStampProgress } from "./components/Objectives/StampProgress";
 import { SystemContainer, HomePageContainer } from "./styles";
 
 import { Tab } from "../../shared-components/UI/Tabs";
+import { PostComment } from "./components/PostComment";
 
 export const SystemModule = () => {
   const [systemTab, setSystemTab] = useState(0);
@@ -35,6 +36,11 @@ export const SystemModule = () => {
         {systemTab === 1 && (
           <HomePageContainer>
             <ObjectivesStampProgress />
+          </HomePageContainer>
+        )}
+        {systemTab === 2 && (
+          <HomePageContainer>
+            <PostComment />
           </HomePageContainer>
         )}
       </Tab>

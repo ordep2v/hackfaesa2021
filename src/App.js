@@ -28,7 +28,7 @@ function App() {
           <Navigation innerNav={url.split("/").pop()?.length === 0} />
           <Route exact path="/" component={() => <HomeModule />} />
           <Route exact path="/system" component={() => <SystemModule />} />
-          <Route exact path="/post" component={() => <BlogPost />} />
+          <Route exact path="/blog/:id" component={() => <BlogPost />} />
           <Footer />
         </LandingPageContainer>
       </div>

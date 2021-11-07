@@ -2,6 +2,7 @@ import { Card } from '../../../../../shared-components/UI/Card';
 import { SeparatorTitle } from '../../../../../shared-components/UI/SeparatorTitle'
 import { TalkingAboutContainer } from './styles';
 export const TalkingAbout = () => {
+
     return (
         <TalkingAboutContainer>
             <SeparatorTitle text='O que estão falando' />

@@ -4,11 +4,12 @@ import { TalkingAbout } from "./TalkingAbout";
 import { TopButton } from "./TopButton";
 
 export const BlogPost = () => {
+
   return (
     <BlogPostContainer>
-    <TopButton/>
-    <PostBlock/>
-    <TalkingAbout/>
+      <TopButton />
+      <PostBlock/>
+      <TalkingAbout />
     </BlogPostContainer>
   );
 };
