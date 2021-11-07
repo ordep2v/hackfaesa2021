@@ -30,7 +30,8 @@ function App() {
           <Route exact path="/" component={() => <HomeModule />} />
           <Route exact path="/system" component={() => <SystemModule />} />
           <Route exact path="/blog" component={() => <BlogPost />} />
-          <Route exact path='/post' component={() => <PostComment />} />
+          <Route exact path="/post" component={() => <PostComment />} />
+          <Route exact path="/blog/:id" component={() => <BlogPost />} />
           <Footer />
         </LandingPageContainer>
       </div>

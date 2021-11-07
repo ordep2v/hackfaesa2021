@@ -13,7 +13,6 @@ export const StampProgressImage = styled.img`
 `;
 
 export const StampProgressTextBox = styled.div`
-  margin-left: 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -21,14 +20,13 @@ export const StampProgressTextBox = styled.div`
 `;
 
 export const StampProgressTitle = styled.span`
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-bottom: 0.5em;
   font-weight: 600;
 `;
 export const StampProgressDescription = styled.span`
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: bold;
-  color: #48bb78;
 `;
 
 export const StampProgressBar = styled.div`
@@ -42,12 +40,9 @@ export const StampProgressArticle = styled.article`
   display: flex;
   flex-direction: column;
   width: 100%;
+  margin: 1em 0;
 
   color: black;
-
-  max-width: 100%;
-  border-radius: 0.5rem;
-
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   background: rgba(255, 255, 255, 0.95);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);

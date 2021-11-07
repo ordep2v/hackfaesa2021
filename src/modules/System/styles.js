@@ -26,9 +26,13 @@ export const SystemContainer = styled.div`
       font-weight: 400;
     }
     ${StampProgressDescription} {
-      font-size: 1.8rem;
+      font-size: 1.1rem;
       font-weight: bold;
-      color: green;
     }
   }
+`;
+
+export const HomePageContainer = styled.div`
+  display: flex;
+  flex-direction: column;
 `;
