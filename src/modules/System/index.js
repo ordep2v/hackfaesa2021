@@ -7,8 +7,7 @@ import { CompaniesDoing } from "./components/HomePage/CompaniesDoing";
 import { SystemContainer } from "./styles";
 
 import { Tab } from "../../shared-components/UI/Tabs";
-import { Route } from "react-router";
-import { BlogPost } from "./components/BlogPost";
+
 
 export const SystemModule = () => {
   const [systemTab, setSystemTab] = useState(0);
