@@ -12,6 +12,7 @@ import { LandingPageContainer } from "./styles";
 
 import bgImage from "./shared-components/Images/image-background.png";
 import { useEffect, useState } from "react";
+import { BlogPost } from "./modules/System/components/BlogPost";
 
 function App() {
   const [url, setUrl] = useState("");
@@ -27,6 +28,7 @@ function App() {
           <Navigation innerNav={url.split("/").pop()?.length === 0} />
           <Route exact path="/" component={() => <HomeModule />} />
           <Route exact path="/system" component={() => <SystemModule />} />
+          <Route exact path="/post" component={() => <BlogPost />} />
           <Footer />
         </LandingPageContainer>
       </div>
